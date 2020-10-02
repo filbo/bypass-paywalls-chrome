@@ -1,8 +1,9 @@
 {
   "background": {
     "scripts": [
-      "common.js",
-      "background.js"
+      "src/js/common.js",
+      "src/js/sites.js",
+      "src/js/background.js"
     ]
   },
   "content_scripts": [
@@ -19,15 +20,18 @@
     "*://*.canberratimes.com.au/*",
     "*://*.economist.com/*",
     "*://*.ed.nl/*",
+    "*://*.elmercurio.com/*",
     "*://*.elpais.com/*",
+    "*://*.estadao.com.br/*",
     "*://*.examiner.com.au/*",
     "*://*.firstthings.com/*",
     "*://*.ft.com/*",
     "*://*.haaretz.co.il/*",
+    "*://*.interest.co.nz/*",
     "*://*.ledevoir.com/*",
-    "*://*.lemonde.fr/*",
     "*://*.leparisien.fr/*",
     "*://*.medium.com/*",
+    "*://*.medscape.com/*",
     "*://*.mexiconewsdaily.com/*",
     "*://*.nytimes.com/*",
     "*://*.nzherald.co.nz/*",
@@ -35,53 +39,56 @@
     "*://*.repubblica.it/*",
     "*://*.sfchronicle.com/*",
     "*://*.sloanreview.mit.edu/*",
+    "*://*.stuff.co.nz/*",
     "*://*.techinasia.com/*",
     "*://*.telegraaf.nl/*",
     "*://*.the-american-interest.com/*",
     "*://*.the-tls.co.uk/*",
     "*://*.theadvocate.com.au/*",
-    "*://*.theathletic.com/*",
     "*://*.thecourier.com.au/*",
     "*://*.theglobeandmail.com/*",
     "*://*.thehindu.com/*",
+    "*://*.thenational.scot/*",
     "*://*.thestar.com/*",
+    "*://*.thewrap.com/*",
     "*://*.trouw.nl/*",
     "*://*.volkskrant.nl/*",
     "*://*.washingtonpost.com/*",
-    "*://*.wsj.com/*"
+    "*://*.wsj.com/*",
+    "*://*.hbr.org/*"
     ],
-      "js": ["contentScript.js"]
+      "js": ["src/js/contentScript.js"]
     }
   ],
   "applications": {
     "gecko": {
       "id": "bypasspaywalls@bypasspaywalls.weebly.com",
-      "update_url": "https://raw.githubusercontent.com/iamadamdev/bypass-paywalls-firefox/master/updates.json"
+      "update_url": "https://raw.githubusercontent.com/iamadamdev/bypass-paywalls-chrome/master/src/updates/updates.json"
     }
   },
   "browser_action": {
     "theme_icons": [
       {
-        "light": "bypass-dark.png",
-        "dark": "bypass.png",
+        "light": "src/icons/bypass-dark.png",
+        "dark": "src/icons/bypass.png",
         "size": 128
       }
     ],
-    "default_popup": "popup.html",
+    "default_popup": "src/html/popup.html",
     "default_icon": {
-      "128": "bypass.png"
+      "128": "src/icons/bypass.png"
     }
   },
   "description": "Bypass News Sites' Paywalls",
   "homepage_url": "https://github.com/iamadamdev/bypass-paywalls-chrome/blob/master/README.md",
   "icons": {
-    "128": "bypass.png"
+    "128": "src/icon/bypass.png"
   },
   "manifest_version": 2,
   "name": "Bypass Paywalls",
   "short_name": "Bypass Paywall",
   "options_ui": {
-    "page": "options.html"
+    "page": "src/html/options.html"
   },
   "permissions": [
     "cookies",
@@ -92,8 +99,10 @@
     "*://*.outbrain.com/*",
     "*://*.piano.io/*",
     "*://*.poool.fr/*",
+    "*://*.qiota.com/*",
     "*://*.tinypass.com/*",
     "*://*.ad.nl/*",
+    "*://*.adelaidenow.com.au/*",
     "*://*.adweek.com/*",
     "*://*.afr.com/*",
     "*://*.asia.nikkei.com/*",
@@ -103,6 +112,7 @@
     "*://*.bloomberg.com/*",
     "*://*.bloombergquint.com/*",
     "*://*.bostonglobe.com/*",
+    "*://*.brisbanetimes.com.au/*",
     "*://*.britannica.com/*",
     "*://*.businessinsider.com/*",
     "*://*.caixinglobal.com/*",
@@ -112,39 +122,47 @@
     "*://*.chicagotribune.com/*",
     "*://*.corriere.it/*",
     "*://*.courant.com/*",
+    "*://*.couriermail.com.au/*",
     "*://*.dailypress.com/*",
     "*://*.dailytelegraph.com.au/*",
     "*://*.demorgen.be/*",
+    "*://*.humo.be/*",
     "*://*.denverpost.com/*",
     "*://*.dynamed.com/*",
     "*://*.economist.com/*",
     "*://*.ed.nl/*",
+    "*://*.elmercurio.com/*",
     "*://*.examiner.com.au/*",
     "*://*.fd.nl/*",
     "*://*.fnlondon.com/*",
     "*://*.foreignpolicy.com/*",
     "*://*.fortune.com/*",
     "*://*.ft.com/*",
+    "*://*.genomeweb.com/*",
     "*://*.glassdoor.com/*",
+    "*://*.globes.co.il/*",
     "*://*.groene.nl/*",
     "*://*.haaretz.co.il/*",
     "*://*.haaretz.com/*",
     "*://*.handelsblatt.com/*",
     "*://*.harpers.org/*",
     "*://*.hbr.org/*",
+    "*://*.heraldsun.com.au/*",
+    "*://*.ilmanifesto.it/*",
     "*://*.inc.com/*",
     "*://*.inquirer.com/*",
+    "*://*.interest.co.nz/*",
     "*://*.investorschronicle.co.uk/*",
     "*://*.irishtimes.com/*",
     "*://*.japantimes.co.jp/*",
     "*://*.journalnow.com/*",
+    "*://*.kansascity.com/*",
     "*://*.labusinessjournal.com/*",
     "*://*.lanacion.com.ar/*",
     "*://*.lastampa.it/*",
     "*://*.latercera.com/*",
     "*://*.latimes.com/*",
     "*://*.lecho.be/*",
-    "*://*.lemonde.fr/*",
     "*://*.leparisien.fr/*",
     "*://*.lesechos.fr/*",
     "*://*.loebclassics.com/*",
@@ -159,6 +177,7 @@
     "*://*.newstatesman.com/*",
     "*://*.newyorker.com/*",
     "*://*.nrc.nl/*",
+    "*://*.ntnews.com.au/*",
     "*://*.nymag.com/*",
     "*://*.nytimes.com/*",
     "*://*.nzherald.co.nz/*",
@@ -178,6 +197,7 @@
     "*://*.spectator.co.uk/*",
     "*://*.spectator.com.au/*",
     "*://*.statista.com/*",
+    "*://*.stuff.co.nz/*",
     "*://*.sun-sentinel.com/*",
     "*://*.techinasia.com/*",
     "*://*.technologyreview.com/*",
@@ -186,7 +206,6 @@
     "*://*.the-tls.co.uk/*",
     "*://*.theadvocate.com.au/*",
     "*://*.theage.com.au/*",
-    "*://*.theathletic.com/*",
     "*://*.theatlantic.com/*",
     "*://*.theaustralian.com.au/*",
     "*://*.thediplomat.com/*",
@@ -196,9 +215,11 @@
     "*://*.themarker.com/*",
     "*://*.themercury.com.au/*",
     "*://*.thenation.com/*",
+    "*://*.thenational.scot/*",
     "*://*.thesaturdaypaper.com.au/*",
     "*://*.thestar.com/*",
     "*://*.thetimes.co.uk/*",
+    "*://*.thewrap.com/*",
     "*://*.tijd.be/*",
     "*://*.towardsdatascience.com/*",
     "*://*.trouw.nl/*",
@@ -207,7 +228,14 @@
     "*://*.volkskrant.nl/*",
     "*://*.washingtonpost.com/*",
     "*://*.wired.com/*",
-    "*://*.wsj.com/*"
+    "*://*.worldpoliticsreview.com/*",
+    "*://*.wsj.com/*",
+    "*://*.nzz.ch/*",
+    "*://*.republic.ru/*",
+    "*://*.historyextra.com/*",
+    "*://*.netdna-ssl.com/*",
+    "*://*.startribune.com/*",
+    "*://*.df.cl/*"
   ],
-  "version": "1.7.0"
+  "version": "1.7.6"
 }
