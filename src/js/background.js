@@ -15,6 +15,7 @@ const allowCookies = [
   'cen.acs.org',
   'chicagobusiness.com',
   'demorgen.be',
+  'humo.be',
   'denverpost.com',
   'ed.nl',
   'examiner.com.au',
@@ -68,6 +69,7 @@ const removeCookies = [
   'cen.acs.org',
   'chicagobusiness.com',
   'demorgen.be',
+  'humo.be',
   'denverpost.com',
   'ed.nl',
   'examiner.com.au',
@@ -114,6 +116,7 @@ const removeCookiesSelectDrop = {
   'ad.nl': ['temptationTrackingId'],
   'ed.nl': ['temptationTrackingId'],
   'demorgen.be': ['TID_ID'],
+  'humo.be': ['TID_ID'],
   'fd.nl': ['socialread'],
   'nrc.nl': ['counter']
 };
