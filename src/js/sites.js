@@ -18,6 +18,7 @@ const defaultSites = {
   'Daily Press': 'dailypress.com',
   'De Groene Amsterdammer': 'groene.nl',
   'DeMorgen': 'demorgen.be',
+  'Humo': 'humo.be',
   'Denver Post': 'denverpost.com',
   'De Tijd': 'tijd.be',
   'de Volkskrant': 'volkskrant.nl',
