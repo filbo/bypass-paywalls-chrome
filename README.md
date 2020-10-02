@@ -45,6 +45,7 @@
 [De Tijd](https://www.tijd.be)\
 [De Volkskrant](https://www.volkskrant.nl)\
 [DeMorgen](https://www.demorgen.be)\
+[Humo](https://www.humo.be)\
 [Denver Post](https://www.denverpost.com)\
 [Diario Financiero](https://www.df.cl)\
 [Dynamed Plus](https://www.dynamed.com)\
